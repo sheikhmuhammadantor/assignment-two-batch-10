@@ -7,3 +7,7 @@
 # Device Size Requirement : 
 - ### Width > 360px
 - ### Height > 660px
+
+### 1. Small device upto : 375px
+### 1. Medium device : 576px to 990px
+### 1. Large device above : 576px

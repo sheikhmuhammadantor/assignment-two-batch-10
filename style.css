@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 @font-face {
     font-family: 'Miama';
@@ -10,6 +10,12 @@
     src: url(./font/Inter.ttf);
 }
 
+:root {
+    --primary-white: rgb(255, 255, 255);
+    --secondary-white: rgb(255, 255, 255, 0.5);
+    --button-bg: rgb(230, 83, 60);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,40 +24,33 @@
 
 body {
     color: #fff;
-    /* font-family: "Miama"; */
     font-family: "Inter";
     background-color: black;
 }
 
 
-/* Shears And Component Style */
+/* SHeres And Component Style */
 .purple-button {
-    background-color: #e02c6d;
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-    font-style: normal;
     border: transparent;
-    border-radius: 1.5em;
-    padding: .7em 1.4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    background-color: var(--button-bg);
+    border-radius: 3rem;
+    color: var(--primary-white);
 }
 
 
 
-/* Header Section Start Hear */
+/* Header Section Start Here */
 .header-section {
-    /* background-color: #000; */
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     width: 100%;
 }
 
-/* Nav Section Start */
+/* Nav Section Start Here */
 .nav-section {
-    height: 5rem;
+    height: 8rem;
     width: calc(100% - 4em);
     max-width: 90rem;
     margin: 0 auto;
@@ -61,27 +60,23 @@ body {
 }
 
 .nav-section a {
-    /* color: rgb(255, 255, 255); */
     text-decoration: none;
 }
 
 .logo-section {
     color: #e6533c;
-    font-weight: 700;
-    font-size: 1.1rem;
-    word-spacing: -0.2rem;
+    font-size: 36px;
+    font-weight: 800;
     cursor: pointer;
 }
 
 .logo-section .logo {
-    color: #e6533c;
+    color: var(--button-bg);
 }
 
 .menu-section-lg {
     border: 1px solid #ffffff1a;
     border-radius: 2.5rem;
-    /* border-radius: 40px; */
-    padding: 0.3rem 0.5rem;
     width: 60%;
     max-width: 33.4rem;
     display: flex;
@@ -89,34 +84,94 @@ body {
 }
 
 .menu-item {
-    /* color: #000; */
     list-style: none;
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 0.1rem 0.3rem;
+    padding: 0.5rem 0rem;
     border-radius: 0.3rem;
     cursor: pointer;
 }
 
 .menu-item a {
+    border: transparent;
     color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
 }
 
-.menu-item:hover {
-    background-color: #93c6c9b9;
+.menu-item:hover a {
+    background-color: var(--button-bg);
 }
 
 .menu-section-md {
     display: none;
 }
 
-/* Header Section End Hear */
+/* Nav Section End Here */
+
+
+/* Header Section End Here */
+.hero-section {
+    width: calc(100% - 4em);
+    max-width: 90rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.5rem;
+}
+
+.hero-content {
+    max-width: 39rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.hero-title {
+    font-size: 4.875rem;
+    margin: 1rem auto;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.hero-text {
+    color: var(--secondary-white);
+    margin: 1rem auto;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.miama {
+    font-family: 'Miama';
+    font-size: 8rem;
+    font-weight: 400;
+
+}
+
+.hero-button {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.join-club {}
+
+.download-app {}
+
+.hero-image {}
+
+.dumbbell-workout {}
 
 
 
 
 /* Media Queries For Medium Device */
-@media screen and (max-width: 700px) and (min-width: 360px) {
+@media screen and (max-width: 990px) and (min-width: 360px) {
     .menu-section-lg {
         display: none;
     }
@@ -126,9 +181,5 @@ body {
         display: flex;
         justify-content: center;
         cursor: pointer;
-    }
-
-    .footer-section-content {
-        height: 55vh;
     }
 }
