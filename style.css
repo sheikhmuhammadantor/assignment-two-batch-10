@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
 
 @font-face {
-    font-family: "Miama";
+    font-family: 'Miama';
     src: url(./font/Miama.otf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/Inter.ttf);
 }
 
 * {
@@ -12,13 +17,11 @@
 }
 
 body {
-    background-color: #fff;
+    color: #fff;
+    /* font-family: "Miama"; */
     font-family: "Inter";
-    color: black;
+    background-color: black;
 }
-
-
-
 
 
 /* Shears And Component Style */
@@ -41,13 +44,14 @@ body {
 
 /* Header Section Start Hear */
 .header-section {
-    background-color: #000000;
+    /* background-color: #000; */
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     width: 100%;
 }
 
 /* Nav Section Start */
 .nav-section {
-    height: 4rem;
+    height: 5rem;
     width: calc(100% - 4em);
     max-width: 90rem;
     margin: 0 auto;
@@ -57,7 +61,7 @@ body {
 }
 
 .nav-section a {
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     text-decoration: none;
 }
 
@@ -69,7 +73,15 @@ body {
     cursor: pointer;
 }
 
+.logo-section .logo {
+    color: #e6533c;
+}
+
 .menu-section-lg {
+    border: 1px solid #ffffff1a;
+    border-radius: 2.5rem;
+    /* border-radius: 40px; */
+    padding: 0.3rem 0.5rem;
     width: 60%;
     max-width: 33.4rem;
     display: flex;
@@ -77,12 +89,17 @@ body {
 }
 
 .menu-item {
+    /* color: #000; */
     list-style: none;
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0.1rem 0.3rem;
     border-radius: 0.3rem;
     cursor: pointer;
+}
+
+.menu-item a {
+    color: #fff;
 }
 
 .menu-item:hover {
