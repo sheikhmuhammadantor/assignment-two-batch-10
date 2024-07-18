@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
 
 @font-face {
     font-family: 'Miama';
@@ -14,6 +14,7 @@
     --primary-white: rgb(255, 255, 255);
     --secondary-white: rgb(255, 255, 255, 0.5);
     --button-bg: rgb(230, 83, 60);
+    --btn-hover-bg: rgba(231, 48, 20, 0.863);
 }
 
 * {
@@ -64,14 +65,18 @@ body {
 }
 
 .logo-section {
-    color: #e6533c;
-    font-size: 36px;
-    font-weight: 800;
     cursor: pointer;
 }
 
 .logo-section .logo {
     color: var(--button-bg);
+    font-size: 38px;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    color: var(--btn-hover-bg)
 }
 
 .menu-section-lg {
@@ -159,19 +164,26 @@ body {
     gap: 1rem;
 }
 
-.join-club {}
+/* .join-club:hover{} */
+/* .download-app {} */
 
-.download-app {}
+.join-club:hover,
+.download-app:hover {
+    background-color: var(--btn-hover-bg);
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-.hero-image {}
+.hero-image {
+    position: relative;
+}
 
-.dumbbell-workout {}
-
+/* .dumbbell-workout {} */
 
 
 
 /* Media Queries For Medium Device */
-@media screen and (max-width: 990px) and (min-width: 360px) {
+@media screen and (990px > width > 575px) {
     .menu-section-lg {
         display: none;
     }
@@ -182,4 +194,58 @@ body {
         justify-content: center;
         cursor: pointer;
     }
+
+    .hero-section {
+        flex-direction: column;
+    }
+}
+
+
+/* Media Queries For Small Device */
+@media screen and (max-width: 575px) {
+    .menu-section-lg {
+        display: none;
+    }
+
+    .menu-section-md {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .hero-content {
+        max-width: 25rem;
+    }
+
+    .hero-title {
+        font-size: 3.8rem;
+    }
+
+    .miama {
+        font-size: 6rem;
+    }
+
+    .purple-button {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .hero-button {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .dumbbell-workout {
+        width: 285px;
+    }
+
 }
