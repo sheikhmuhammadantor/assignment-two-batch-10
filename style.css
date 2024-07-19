@@ -32,7 +32,7 @@ body {
 }
 
 
-/* SHeres And Component Style */
+/* Shares And Component Style */
 .orange-button {
     border: transparent;
     font-size: 1.2rem;
@@ -51,10 +51,11 @@ body {
     width: 100%;
 }
 
+
 /* Nav Section Start Here */
 .nav-section {
     height: 8rem;
-    width: calc(100% - 4em);
+    width: calc(100% - 4rem);
     max-width: 90rem;
     margin: 0 auto;
     display: flex;
@@ -76,10 +77,6 @@ body {
     font-weight: 800;
     transition: 0.2s;
 }
-
-/* .logo:hover {
-    color: var(--btn-hover-bg)
-} */
 
 .menu-section-lg {
     border: 1px solid #ffffff1a;
@@ -117,9 +114,9 @@ body {
 /* Nav Section End Here */
 
 
-/* Header Section End Here */
+/* Hero Section Start Here */
 .hero-section {
-    width: calc(100% - 4em);
+    width: calc(100% - 6rem);
     max-width: 90rem;
     margin: 2rem auto;
     display: flex;
@@ -134,7 +131,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .hero-title {
@@ -156,7 +152,6 @@ body {
     font-family: 'Miama';
     font-size: 8rem;
     font-weight: 400;
-
 }
 
 .hero-button {
@@ -167,7 +162,6 @@ body {
     gap: 1rem;
 }
 
-/* .join-club:hover{} */
 .download-app {
     background-color: transparent;
     border: 1.5px solid var(--primary-white);
@@ -190,8 +184,10 @@ body {
     position: relative;
 }
 
-/* .dumbbell-workout {} */
+/* Hero Section End Here */
 
+
+/* Small Popup Card on Hero Section. */
 .free-workout {
     background-color: var(--secondary-black);
     color: var(--primary-white);
@@ -228,7 +224,6 @@ body {
     position: absolute;
     bottom: 50px;
     left: -80px;
-    /* display: none; */
 }
 
 .circle {
@@ -245,6 +240,8 @@ body {
     align-items: start;
     gap: 0.1rem;
 }
+
+/* Header Section End Here */
 
 
 
@@ -264,6 +261,16 @@ body {
     .hero-section {
         flex-direction: column;
         gap: 3.5rem;
+    }
+
+    .free-workout {
+        top: 50px;
+        right: -25px;
+    }
+
+    .video-tutorial {
+        bottom: 145px;
+        left: -30px;
     }
 }
 
@@ -302,9 +309,23 @@ body {
         font-size: 16px;
         padding: 15px 25px;
     }
+
+    .free-workout {
+        top: 50px;
+        right: -25px;
+    }
+
+    .video-tutorial {
+        bottom: 145px;
+        left: -30px;
+    }
 }
 
+
+/* Responsive For Very Old & Small Device */
 @media screen and (max-width: 415px) {
+
+    /* Width: Upto 360px  */
     .hero-button {
         flex-direction: column;
         align-items: center;
@@ -315,4 +336,12 @@ body {
         width: 285px;
     }
 
+    .free-workout {
+        top: 120px;
+        right: -30px;
+    }
+
+    .video-tutorial {
+        bottom: 50px;
+    }
 }
