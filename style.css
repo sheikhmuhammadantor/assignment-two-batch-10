@@ -43,10 +43,15 @@ body {
     color: var(--primary-white);
 }
 
+.hide {
+    /* display: none !important; */
+}
+
 
 
 /* Header Section Start Here */
 .header-section {
+    /* border: 1px solid white; */
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -325,6 +330,59 @@ body {
 
 
 
+/* Run Section Start Hear */
+.run-section {
+    width: calc(100% - 4rem);
+    max-width: 90rem;
+    margin: 4rem auto;
+    background-color: var(--secondary-black);
+    border-radius: 3rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.run-content {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.run-title {
+    font-size: 3rem;
+}
+
+.run-details {
+    max-width: 80%;
+    font-size: 1rem;
+    color: var(--secondary-white);    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.join-now {
+    font-size: 1.2rem;
+    padding: 1.2rem 5rem;
+}
+
+.run-image {
+    width: 40%;
+    min-height: 26rem;
+    background-image: url(./images/run.jpg);
+    background-size: 250%;
+    background-position: -500px -100px;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+/* Run Section End Hear */
+
+
+
 /* Media Queries For Medium Device */
 @media screen and (990px > width > 575px) {
     .menu-section-lg {
@@ -365,6 +423,57 @@ body {
 
     .habit-details p {
         margin-top: 0.8rem;
+    }
+
+    /*  */
+
+    .run-section {
+        width: calc(100% - 2rem);
+        max-width: 34rem;
+        margin: 3rem auto;
+        /* background-color: var(--secondary-black); */
+        border-radius: 2rem;
+        padding: 2rem;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+    
+    .run-content {
+        /* max-width: 40%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* flex-grow: 45%; */
+        /* align-items: flex-start; */
+        /* gap: 2rem; */
+    }
+    
+    .run-title {
+        font-size: 2.2rem;
+    }
+    
+    .run-details {
+        max-width: 80%;
+        /* font-size: 1rem; */
+        /* color: var(--secondary-white);    font-weight: 400; */
+        line-height: 1.4rem;
+        /* letter-spacing: 0.5px; */
+    }
+    
+    .join-now {
+        font-size: 1rem;
+        padding: 1rem 2.2rem;
+    }
+    
+    .run-image {
+        width: 40%;
+        min-height: 8rem;
+        background-image: url(./images/run.jpg);
+        background-size: 250%;
+        background-position: -500px -100px;
+        background-repeat: no-repeat;
+        border-radius: 2rem;
     }
 }
 
