@@ -269,6 +269,7 @@ body {
 
 .habit-title {
     font-size: 3rem;
+    text-align: center;
 }
 
 .habit-text {
@@ -351,6 +352,20 @@ body {
         bottom: 145px;
         left: -30px;
     }
+
+    .habit-section-content {
+        row-gap: 4rem;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .habit-content {
+        width: 13.5rem;
+    }
+
+    .habit-details p {
+        margin-top: 0.8rem;
+    }
 }
 
 
@@ -397,6 +412,29 @@ body {
     .video-tutorial {
         bottom: 145px;
         left: -30px;
+    }
+
+    .habit-title {
+        font-size: 2rem;
+    }
+
+    .habit-text {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .habit-section-content {
+        flex-direction: column;
+    }
+
+    .habit-content {
+        width: 18rem;
+        max-width: 100%;
+    }
+
+    .habit-details p {
+        margin-top: 0.6rem;
+        line-height: 1.3rem;
     }
 }
 
