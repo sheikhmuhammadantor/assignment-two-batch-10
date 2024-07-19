@@ -13,6 +13,8 @@
 :root {
     --primary-white: rgb(255, 255, 255);
     --secondary-white: rgb(255, 255, 255, 0.5);
+    --primary-black: rgb(0, 0, 0);
+    --secondary-black: rgba(255, 255, 255, 0.12);
     --button-bg: rgb(230, 83, 60);
     --btn-hover-bg: rgba(231, 48, 20, 0.863);
 }
@@ -31,7 +33,7 @@ body {
 
 
 /* SHeres And Component Style */
-.purple-button {
+.orange-button {
     border: transparent;
     font-size: 1.2rem;
     font-weight: 600;
@@ -45,7 +47,7 @@ body {
 
 /* Header Section Start Here */
 .header-section {
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
 
@@ -75,9 +77,9 @@ body {
     transition: 0.2s;
 }
 
-.logo:hover {
+/* .logo:hover {
     color: var(--btn-hover-bg)
-}
+} */
 
 .menu-section-lg {
     border: 1px solid #ffffff1a;
@@ -127,6 +129,7 @@ body {
 }
 
 .hero-content {
+    width: 100%;
     max-width: 39rem;
     display: flex;
     flex-direction: column;
@@ -165,12 +168,21 @@ body {
 }
 
 /* .join-club:hover{} */
-/* .download-app {} */
+.download-app {
+    background-color: transparent;
+    border: 1.5px solid var(--primary-white);
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-.join-club:hover,
-.download-app:hover {
+.join-club:hover {
     background-color: var(--btn-hover-bg);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-app:hover {
+    color: var(--button-bg);
     transition: 0.3s;
 }
 
@@ -179,6 +191,60 @@ body {
 }
 
 /* .dumbbell-workout {} */
+
+.free-workout {
+    background-color: var(--secondary-black);
+    color: var(--primary-white);
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.1rem;
+    position: absolute;
+    top: 130px;
+    right: -30px;
+}
+
+.free-workout h2,
+.tutorial-text h2 {
+    font-size: 1.8rem;
+}
+
+.free-workout p,
+.tutorial-text p {
+    font-size: .9rem;
+    color: var(--secondary-white);
+}
+
+.video-tutorial {
+    background-color: var(--secondary-black);
+    color: var(--primary-white);
+    border-radius: 1rem;
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: start;
+    gap: 0.8rem;
+    position: absolute;
+    bottom: 50px;
+    left: -80px;
+    /* display: none; */
+}
+
+.circle {
+    height: 2.7rem;
+    width: 2.7rem;
+    background-color: var(--button-bg);
+    border-radius: 50%;
+}
+
+.tutorial-text {
+    color: var(--primary-white);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.1rem;
+}
 
 
 
@@ -197,6 +263,7 @@ body {
 
     .hero-section {
         flex-direction: column;
+        gap: 3.5rem;
     }
 }
 
@@ -216,7 +283,7 @@ body {
 
     .hero-section {
         flex-direction: column;
-        align-items: flex-start
+        gap: 2.5rem;
     }
 
     .hero-content {
@@ -231,7 +298,7 @@ body {
         font-size: 6rem;
     }
 
-    .purple-button {
+    .orange-button {
         font-size: 16px;
         padding: 15px 25px;
     }
