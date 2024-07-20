@@ -15,8 +15,8 @@
     --secondary-white: rgb(255, 255, 255, 0.5);
     --primary-black: rgb(0, 0, 0);
     --secondary-black: rgba(255, 255, 255, 0.12);
-    --button-bg: rgb(230, 83, 60);
-    --btn-hover-bg: rgba(231, 48, 20, 0.863);
+    --button-bg: rgb(230, 80, 55);
+    --btn-hover-bg: rgb(230, 50, 20);
 }
 
 * {
@@ -41,6 +41,12 @@ body {
     background-color: var(--button-bg);
     border-radius: 3rem;
     color: var(--primary-white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.orange-button:hover {
+    background-color: var(--btn-hover-bg);
 }
 
 /* .hide {
@@ -171,19 +177,11 @@ body {
 .download-app {
     background-color: transparent;
     border: 1.5px solid var(--primary-white);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.join-club:hover {
-    background-color: var(--btn-hover-bg);
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 .download-app:hover {
+    background-color: transparent;
     color: var(--button-bg);
-    transition: 0.3s;
 }
 
 .hero-image {
