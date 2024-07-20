@@ -43,9 +43,9 @@ body {
     color: var(--primary-white);
 }
 
-/* .hide {
+.hide {
     display: none !important;
-} */
+}
 
 
 
@@ -383,6 +383,29 @@ body {
 /* Run Section End Hear */
 
 
+
+/* BMI Section Start Hear */
+.bmi-section{}
+.bmi-header{}
+.bmi-title{}
+.bmi-text{}
+.bmi-body-bg{}
+.bmi-body-content{}
+.bmi-chart{}
+.chart-header{}
+.bmi-table{}
+.bmi-calculator{}
+.calculator-title{}
+.calculator-text{}
+.bmi-form{}
+/*  */
+.calculate{}
+.calculate-button{}
+
+/* BMI Section End Hear */
+
+
+
 /* Trainer Section Start Here */
 .trainer-section {
     width: calc(100% - 4rem);
@@ -482,7 +505,7 @@ body {
 
 
 /* Footer Section Start Here */
-.main-footer{
+.main-footer {
     width: 100%;
     background-color: var(--secondary-black);
     padding-top: 4rem;
@@ -492,7 +515,7 @@ body {
 .footer-section {
     width: calc(100% - 4rem);
     max-width: 90rem;
-    margin: 0 auto ;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 3fr 1fr;
@@ -523,14 +546,15 @@ body {
     letter-spacing: 0.4px;
 }
 
-section .common-service{
+section .common-service {
     align-items: end;
 }
 
 .common-service li {
     list-style: none;
 }
-.common-service li a{
+
+.common-service li a {
     text-decoration: none;
     color: var(--secondary-white);
     font-size: 1.2rem;
