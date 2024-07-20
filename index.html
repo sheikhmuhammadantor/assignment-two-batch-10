@@ -153,30 +153,52 @@
                 <div class="bmi-chart">
                     <h2 class="chart-header">BMI Calculator Chart</h2>
                     <table class="bmi-table">
-
+                        <thead>
+                            <tr>
+                                <th>BMI</th>
+                                <th>Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Below 18.5</td>
+                                <td>Underweight</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.9</td>
+                                <td>Healthy</td>
+                            </tr>
+                            <tr>
+                                <td>25.0 - 29.9</td>
+                                <td>Overweight</td>
+                            </tr>
+                            <tr>
+                                <td>30.0 And Above</td>
+                                <td>Obese</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="bmi-calculator">
-                    <h2 class="calculator-title">Calculate Your BMI</h2>
+                    <h2 class="calculator-title">Calculate your BMI</h2>
                     <p class="calculator-text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe, optio possimus commodi
-                        dolorum vero ullam. Cumque quis voluptas suscipit!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi saepe, optio possimus!
                     </p>
                     <form class="bmi-form">
-                        <input type="text" name="Height" id="height" placeholder="Height/cm">
-                        <input type="text" name="Weight" id="weight" placeholder="Weight/kg">
-                        <input type="text" name="Age" id="age" placeholder="Age">
-                        <select name="Sex" id="sex">
+                        <input class="form-common" type="text" name="Height" id="height" placeholder="Height/cm">
+                        <input class="form-common" type="text" name="Weight" id="weight" placeholder="Weight/kg">
+                        <input class="form-common" type="text" name="Age" id="age" placeholder="Age">
+                        <select class="form-common" name="Sex" id="sex">
                             <option value="Sex">Sex</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                         </select>
-                        <select name="Activity Factor" id="activity">
-                            <option value="#">Select an activity Factor</option>
+                        <select class="form-common" name="Activity" id="activity">
+                            <option value="factor">Select an activity Factor</option>
                         </select>
                     </form>
                     <a href="#" class="calculate">
-                        <button class="calculate-button">Calculate</button>
+                        <button class="calculate-button orange-button">Calculate</button>
                     </a>
                 </div>
             </section>
