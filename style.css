@@ -43,15 +43,15 @@ body {
     color: var(--primary-white);
 }
 
-.hide {
+/* .hide {
     display: none !important;
-}
+} */
 
 
 
 /* Header Section Start Here */
 .header-section {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -251,7 +251,6 @@ body {
 /* Header Section End Here */
 
 
-
 /* Change Your Habits Section Start Hear */
 .habits-section {
     width: calc(100% - 4rem);
@@ -327,7 +326,6 @@ body {
 }
 
 /* Change Your Habits Section End Hear */
-
 
 
 /* Run Section Start Hear */
@@ -497,30 +495,16 @@ td {
     background-color: var(--secondary-black);
 }
 
-/* input[type="text"]{}
-#height{}
-#weight{}
-#age{}
-select[name="Sex"]{}
-#sex option{}
-option[value="Sex"]{}
-option[value="Male"]{}
-option[value="Female"]{} */
-
 select[name="Activity"] {
     grid-column: 1/3;
 }
 
-/* #activity option{}
-option[value="factor"]{}
-.calculate{} */
 .calculate-button {
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
 /* BMI Section End Hear */
-
 
 
 /* Trainer Section Start Here */
@@ -620,7 +604,6 @@ option[value="factor"]{}
 /* Trainer Section End Here */
 
 
-
 /* Footer Section Start Here */
 .main-footer {
     width: 100%;
@@ -638,8 +621,6 @@ option[value="factor"]{}
     grid-template-rows: 3fr 1fr;
     justify-items: center;
 }
-
-/* dsfgv sg  sgdg  gfg sgfd sdgsg dsdg sdfsrt fsdfg hgfg */
 
 .common-footer {
     width: 100%;
@@ -816,106 +797,26 @@ section .common-service {
         height: 18rem;
     }
 
-    /* BMI Section Responsive */
-    /* .bmi-header {
-        padding: 0;
-    }
-
-    .bmi-body-content {
-        flex-direction: column;
-        align-items: stretch;
-    } */
-
-    /* Footer Section Responsive */
-    /* .main-footer {
-        width: 100%;
-        background-color: var(--secondary-black);
-        padding-top: 4rem;
-        margin-top: 3rem;
-    } */
-    
     .footer-section {
-        /* width: calc(100% - 4rem); */
-        /* max-width: 90rem; */
-        /* margin: 0 auto; */
-        /* display: grid; */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 3fr 3fr 1fr;
-        /* justify-items: center; */
     }
-    
-    /* dsfgv sg  sgdg  gfg sgfd sdgsg dsdg sdfsrt fsdfg hgfg */
-    
-    .common-footer {
-        /* width: 100%; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: flex-start; */
-        /* gap: 1.5rem; */
-    }
-    
-    /* .fitness-title {
-        color: var(--button-bg);
-        font-size: 40px;
-        font-weight: 800;
-    } */
-    
+
     .fitness-text {
         max-width: 70%;
-        /* color: var(--secondary-white); */
-        /* font-size: 0.9rem; */
-        /* font-weight: 400; */
-        /* line-height: 1.3rem; */
-        /* letter-spacing: 0.4px; */
     }
-    
+
     section .common-service {
         align-items: flex-start;
     }
-    
-    /* .common-service li {
-        list-style: none;
-    } */
-    
-    /* .common-service li a {
-        text-decoration: none;
-        color: var(--secondary-white);
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 2.6rem;
-        letter-spacing: 0.4px;
-        cursor: pointer;
-    } */
-    
-    /* .service-title {
-        font-size: 1.8rem;
-        font-weight: 600;
-    } */
-    
+
     .footer-bottom {
         grid-column: 1/3;
-        /* border-top: 1px solid var(--secondary-black); */
-        /* grid-column: 1/4; */
-        /* text-align: center; */
     }
-    
-    /* .bottom-text {
-        text-align: center;
-        margin: 2rem auto;
-        color: var(--secondary-white);
-        font-size: 0.9rem;
-        font-weight: 400;
-        line-height: 1.5rem;
-        letter-spacing: 0.5px;
-    } */
 
-    .footer-fitness{
+    .footer-fitness {
         grid-column: 1/3;
         justify-content: center;
-    }
-
-    .common-service{
-        /* grid-column: ; */
     }
 }
 
@@ -1071,33 +972,10 @@ section .common-service {
         grid-template-rows: auto;
     }
 
-    /* BMI Section Responsive */
-    /* .bmi-header {
-        width: 100%;
-        padding: 0 5px;
-    }
-
-    .bmi-body-content {
-        flex-direction: column;
-    }
-
-    .form-common {
-        width: 100%;
-    }
-
-    select[name="Activity"] {
-        max-width: 100%;
-    } */
-
     /* Footer Section Responsive */
     .footer-section {
-        /* width: calc(100% - 4rem); */
-        /* max-width: 90rem; */
-        /* margin: 0 auto; */
-        /* display: grid; */
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr) auto;
-        /* justify-items: center; */
         gap: 2rem;
     }
 
@@ -1105,16 +983,13 @@ section .common-service {
         align-items: flex-start;
     }
 
-    .footer-fitness{
+    .footer-fitness {
         grid-column: 1/2;
         justify-content: center;
     }
 
     .footer-bottom {
         grid-column: 1/2;
-        /* border-top: 1px solid var(--secondary-black); */
-        /* grid-column: 1/4; */
-        /* text-align: center; */
     }
 }
 
