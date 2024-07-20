@@ -43,15 +43,15 @@ body {
     color: var(--primary-white);
 }
 
-/* .hide {
+.hide {
     display: none !important;
-} */
+}
 
 
 
 /* Header Section Start Here */
 .header-section {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -383,9 +383,108 @@ body {
 /* Run Section End Hear */
 
 
+/* Trainer Section Start Here */
+.trainer-section {
+    width: calc(100% - 4rem);
+    max-width: 90rem;
+    margin: 4rem auto;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.trainer-header {
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.trainer-title {
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+
+.trainer-text {
+    max-width: 85%;
+    font-size: 1rem;
+    color: var(--secondary-white);
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+.trainer-photo-feme {
+    background-color: var(--secondary-black);
+    width: 100%;
+    padding: 1.6rem;
+    border-radius: 1.2rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.trainer-photo {
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.trainer-photo h2 {
+    font-size: 1.6rem;
+}
+
+.trainer-photo p {
+    font-size: 1rem;
+    color: var(--secondary-white);
+}
+
+.trainer-1 {
+    background-image: url(./images/trainer1.png);
+
+}
+
+.trainer-2 {
+    background-image: url(./images/trainer2.png);
+}
+
+.trainer-3 {
+    background-image: url(./images/trainer3.png);
+}
+
+.trainer-4 {
+    background-image: url(./images/trainer4.png);
+}
+
+.trainer-5 {
+    background-image: url(./images/trainer5.png);
+}
+
+.trainer-6 {
+    background-image: url(./images/trainer6.png);
+}
+
+/* Trainer Section End Here */
+
+
 
 /* Media Queries For Medium Device */
 @media screen and (990px > width > 575px) {
+
+    /* Navbar Responsive */
     .menu-section-lg {
         display: none;
     }
@@ -397,6 +496,7 @@ body {
         cursor: pointer;
     }
 
+    /* Hero Section Responsive */
     .hero-section {
         flex-direction: column;
         gap: 3.5rem;
@@ -412,6 +512,7 @@ body {
         left: -30px;
     }
 
+    /* Habit Section Responsive */
     .habit-section-content {
         row-gap: 4rem;
         column-gap: 2rem;
@@ -426,6 +527,7 @@ body {
         margin-top: 0.8rem;
     }
 
+    /* Run Section Responsive */
     .run-section {
         width: calc(100% - 2rem);
         margin: 3rem auto;
@@ -455,11 +557,15 @@ body {
         background-size: cover;
         background-position: -250px 0px;
     }
+
+    /* Trainer Section Responsive */
 }
 
 
 /* Media Queries For Small Device */
 @media screen and (max-width: 575px) {
+
+    /* Navbar Responsive */
     .menu-section-lg {
         display: none;
     }
@@ -471,6 +577,7 @@ body {
         cursor: pointer;
     }
 
+    /* Hero Section Responsive */
     .hero-section {
         flex-direction: column;
         gap: 2.5rem;
@@ -493,6 +600,7 @@ body {
         padding: 15px 25px;
     }
 
+    /* Habit Section Responsive */
     .free-workout {
         top: 50px;
         right: -25px;
@@ -526,6 +634,7 @@ body {
         line-height: 1.3rem;
     }
 
+    /* Run Section Responsive */
     .run-section {
         width: calc(100% - 1rem);
         margin: 2rem auto;
@@ -565,6 +674,8 @@ body {
         background-position: center;
         border-radius: 1rem;
     }
+
+    /* Trainer Section Responsive */
 }
 
 /* Responsive For Very Old & Small Device */
