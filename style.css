@@ -51,7 +51,7 @@ body {
 
 /* Header Section Start Here */
 .header-section {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -478,6 +478,89 @@ body {
 }
 
 /* Trainer Section End Here */
+
+
+
+/* Footer Section Start Here */
+.main-footer{
+    width: 100%;
+    background-color: var(--secondary-black);
+    padding-top: 4rem;
+    margin-top: 3rem;
+}
+
+.footer-section {
+    width: calc(100% - 4rem);
+    max-width: 90rem;
+    margin: 0 auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+}
+
+.common-footer {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.fitness-title {
+    color: var(--button-bg);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.fitness-text {
+    max-width: 90%;
+    color: var(--secondary-white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0.4px;
+}
+
+section .common-service{
+    align-items: end;
+}
+
+.common-service li {
+    list-style: none;
+}
+.common-service li a{
+    text-decoration: none;
+    color: var(--secondary-white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.service-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.bottom-text {
+    text-align: center;
+    margin: 2rem auto;
+    color: var(--secondary-white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Footer Section End Here */
 
 
 
