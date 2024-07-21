@@ -49,15 +49,15 @@ body {
     background-color: var(--btn-hover-bg);
 }
 
-.hide {
+/* .hide {
     display: none !important;
-}
+} */
 
 
 
 /* Header Section Start Here */
 .header-section {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -424,41 +424,29 @@ body {
 }
 
 .diamond-card {
-    /* border: 1px solid red; */
     background-color: var(--secondary-black);
     border-radius: 1rem;
     padding: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
 
 .image-box {
-    /* margin-top: 10px; */
     border-radius: 50%;
     align-self: flex-start;
     border: 1px solid white;
-    /* max-width: 5rem; */
     min-height: 6rem;
     min-width: 6rem;
     overflow: hidden;
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* background-position: 40px 20px; */
 }
 
 .image-box img {
-    /* width: 6rem; */
     height: 6rem;
-    /* border-radius: 50%; */
-    /* height: auto; */
-    /* max-width: 100%; */
-    /* max-height: 100%; */
 }
 
 .diamond-content {
-    /* border: 1px solid floralwhite; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -466,10 +454,8 @@ body {
 }
 
 .diamond-details {
-    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 8px;
 }
 
@@ -924,6 +910,14 @@ section .common-service {
         background-position: -250px 0px;
     }
 
+    /* Diamond Section Responsive */
+    .diamond-body-content {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    /* Exercises Section Responsive */
+
     /* BMI Section Responsive */
     .bmi-header {
         padding: 0;
@@ -1092,6 +1086,23 @@ section .common-service {
         background-position: center;
         border-radius: 1rem;
     }
+
+    /* Diamond Section Responsive */
+    .diamond-header {
+        width: calc(100% - 2rem);
+    }
+
+    .diamond-title {
+        font-size: 2.5rem;
+    }
+
+    .diamond-body-content {
+        width: calc(100% - 2rem);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    /* Exercises Section Responsive */
 
     /* BMI Section Responsive */
     .bmi-header {
