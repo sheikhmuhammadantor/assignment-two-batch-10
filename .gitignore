@@ -1,3 +1,5 @@
 *.pdf
 *.fig
-/image
+/diamonds
+/test.html
+/test.css
