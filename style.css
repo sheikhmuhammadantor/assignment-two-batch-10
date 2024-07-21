@@ -49,15 +49,15 @@ body {
     background-color: var(--btn-hover-bg);
 }
 
-/* .hide {
+.hide {
     display: none !important;
-} */
+}
 
 
 
 /* Header Section Start Here */
 .header-section {
-    /* border: 1px solid white; */
+    border: 1px solid white;
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -384,6 +384,143 @@ body {
 
 
 
+/* Diamond Section Start Hear */
+.diamond-section {
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.diamond-header {
+    width: calc(100% - 4rem);
+    max-width: 90rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.diamond-title {
+    font-size: 4rem;
+}
+
+.diamond-body-bg {
+    background-color: var(--secondary-black);
+    width: 100%;
+    padding: 3rem 0rem;
+    margin-top: 2rem;
+}
+
+.diamond-body-content {
+    width: calc(100% - 4rem);
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.diamond-card {
+    /* border: 1px solid red; */
+    background-color: var(--secondary-black);
+    border-radius: 1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-box {
+    /* margin-top: 10px; */
+    border-radius: 50%;
+    align-self: flex-start;
+    border: 1px solid white;
+    /* max-width: 5rem; */
+    min-height: 6rem;
+    min-width: 6rem;
+    overflow: hidden;
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-position: 40px 20px; */
+}
+
+.image-box img {
+    /* width: 6rem; */
+    height: 6rem;
+    /* border-radius: 50%; */
+    /* height: auto; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+}
+
+.diamond-content {
+    /* border: 1px solid floralwhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.diamond-details {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 8px;
+}
+
+.diamond-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.information {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    font-size: 15px;
+    color: var(--secondary-white);
+}
+
+.diamond-name {
+    font-size: 15px;
+    color: var(--secondary-white);
+}
+
+/* .diamond-date span{} */
+
+.diamond-feedback {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.thumbs {
+    background-color: #00000080;
+    width: 3.2rem;
+    padding: 3px 16px;
+    border-radius: 8px;
+}
+
+.thumbs:hover {
+    border: 1px solid var(--primary-white);
+}
+
+/* Diamond Section End Hear */
+
+
+
+/* Exercise Section Start Hear */
+/* Exercise Section End Hear */
+
+
+
 /* BMI Section Start Hear */
 .bmi-section {
     margin: 6rem auto;
@@ -681,7 +818,7 @@ section .common-service {
     cursor: pointer;
 }
 
-.common-service li:hover a{
+.common-service li:hover a {
     text-decoration: underline;
 }
 
