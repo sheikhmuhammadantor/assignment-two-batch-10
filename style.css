@@ -520,7 +520,6 @@ body {
     width: calc(100% - 1rem);
     max-width: 90rem;
     margin: 6rem auto;
-    border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -553,6 +552,7 @@ body {
 .exercise-photo-feme {
     width: 100%;
     display: grid;
+    grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
@@ -774,7 +774,7 @@ select[name="Activity"] {
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 3rem;
 }
@@ -1041,6 +1041,58 @@ section .common-service {
     }
 
     /* Exercises Section Responsive */
+    .exercise-header {
+        max-width: calc(100% - 10px);
+    }
+
+    .exercise-title {
+        font-size: 2.5rem;
+    }
+
+    .exercise-text {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .exercise-photo {
+        height: 12rem;
+        padding: 15px;
+    }
+
+    .exercise-photo p {
+        font-size: 12px;
+    }
+
+    .exercise-1 {
+        grid-column: 1/5;
+    }
+
+    .exercise-2 {
+        grid-column: 5/11;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exercise-3 {
+        grid-column: 11/16;
+    }
+
+    .exercise-4 {
+        grid-column: 1/8;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .exercise-5 {
+        grid-column: 8/12;
+    }
+
+    .exercise-6 {
+        grid-column: 12/16;
+    }
+
 
     /* BMI Section Responsive */
     .bmi-header {
@@ -1227,6 +1279,58 @@ section .common-service {
     }
 
     /* Exercises Section Responsive */
+    .exercise-header {
+        max-width: calc(100% - 10px);
+    }
+
+    .exercise-title {
+        font-size: 2.5rem;
+    }
+
+    .exercise-text {
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .exercise-photo {
+        height: 12rem;
+        padding: 15px;
+    }
+
+    .exercise-photo p {
+        font-size: 12px;
+    }
+
+    .exercise-1 {
+        grid-column: 1/9;
+    }
+
+    .exercise-2 {
+        grid-column: 9/16;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exercise-3 {
+        display: none;
+    }
+
+    .exercise-4 {
+        grid-column: 1/8;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .exercise-5 {
+        grid-column: 8/16;
+    }
+
+    .exercise-6 {
+        display: none;
+    }
+
 
     /* BMI Section Responsive */
     .bmi-header {
