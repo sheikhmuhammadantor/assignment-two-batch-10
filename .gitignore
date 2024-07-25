@@ -1,5 +1,5 @@
 *.pdf
 *.fig
-/diamonds
+# /diamonds
 /test.html
 /test.css

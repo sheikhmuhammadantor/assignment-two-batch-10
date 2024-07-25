@@ -444,17 +444,29 @@ body {
     background-repeat: no-repeat;
 }
 
-.diamond-1 {}
+.diamond-1 {
+    background-image: url(./diamonds/hiteshchoudhary.jpg);
+}
 
-.diamond-2 {}
+.diamond-2 {
+    background-image: url(./diamonds/jhankar-mahbub.jpg);
+}
 
-.diamond-3 {}
+.diamond-3 {
+    background-image: url(./diamonds/coach-kanchon.jpg);
+}
 
-.diamond-4 {}
+.diamond-4 {
+    background-image: url(./diamonds/gias-uddin.jpg);
+}
 
-.diamond-5 {}
+.diamond-5 {
+    background-image: url(./diamonds/harry-bhai.jpg);
+}
 
-.diamond-6 {}
+.diamond-6 {
+    background-image: url(./diamonds/theresa-wabb.png);
+}
 
 .diamond-content {
     display: flex;
@@ -494,7 +506,9 @@ body {
     text-decoration: underline;
 }
 
-/* .diamond-date span{} */
+.diamond-date span{
+    color: var(--primary-white);
+}
 
 .diamond-feedback {
     display: flex;
