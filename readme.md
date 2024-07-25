@@ -1,5 +1,6 @@
-# For Live Preview : [Go Live](https://sheikhmuhammadantor.github.io/influencer-gear-responsive/)
+# For Live Preview : [Go Live](https://sheikhmuhammadantor.github.io/assignment-two-batch-10/)
 
+# Design Repositories : [Link ](https://github.com/ProgrammingHero1/B10A2-versatile-ui) -
 
 # [Figma Link](https://www.figma.com/design/Hb31V8a9AdEXkjc0P4gRWm/Theme%3A-Fitness-Related-website?node-id=0-1&t=497wT8tcrhXU6Hiy-1)
 

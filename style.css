@@ -57,7 +57,6 @@ body {
 
 /* Header Section Start Here */
 .header-section {
-    /* border: 1px solid white; */
     background: repeating-linear-gradient(var(--primary-black), var(--secondary-black), var(--secondary-black), var(--secondary-black), var(--primary-black));
     width: 100%;
 }
@@ -104,7 +103,6 @@ body {
     font-weight: 500;
     padding: 0.5rem 0rem;
     border-radius: 0.3rem;
-    cursor: pointer;
 }
 
 .menu-item a {
@@ -114,7 +112,7 @@ body {
     border-radius: 3rem;
 }
 
-.menu-item:hover a {
+.menu-item a:hover {
     background-color: var(--button-bg);
 }
 
@@ -309,6 +307,7 @@ body {
     width: 100%;
     max-height: 100%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .habit-image>img:hover {
@@ -445,12 +444,17 @@ body {
     background-repeat: no-repeat;
 }
 
-.diamond-1{}
-.diamond-2{}
-.diamond-3{}
-.diamond-4{}
-.diamond-5{}
-.diamond-6{}
+.diamond-1 {}
+
+.diamond-2 {}
+
+.diamond-3 {}
+
+.diamond-4 {}
+
+.diamond-5 {}
+
+.diamond-6 {}
 
 .diamond-content {
     display: flex;
@@ -969,6 +973,11 @@ section .common-service {
         width: 10%;
         display: flex;
         justify-content: center;
+    }
+
+    .barss {
+        width: 3rem;
+        height: 2rem;
         cursor: pointer;
     }
 
