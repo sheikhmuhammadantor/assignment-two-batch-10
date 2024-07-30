@@ -71,6 +71,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 4rem;
 }
 
 .nav-section a {
@@ -91,8 +92,8 @@ body {
 .menu-section-lg {
     border: 1px solid #ffffff1a;
     border-radius: 2.5rem;
-    width: 60%;
-    max-width: 33.4rem;
+    width: 45%;
+    min-width: 28rem;
     display: flex;
     justify-content: space-between;
 }
@@ -975,10 +976,8 @@ section .common-service {
 
 
 
-/* Media Queries For Medium Device */
-@media screen and (990px > width > 575px) {
-
-    /* Navbar Responsive */
+/* Navbar Responsive */
+@media screen and (max-width: 740px) {
     .menu-section-lg {
         display: none;
     }
@@ -994,6 +993,10 @@ section .common-service {
         height: 2rem;
         cursor: pointer;
     }
+}
+
+/* Media Queries For Medium Device */
+@media screen and (990px > width > 575px) {
 
     /* Hero Section Responsive */
     .hero-section {
