@@ -1016,9 +1016,9 @@ section .common-service {
 
     /* Habit Section Responsive */
     .habit-section-content {
-        row-gap: 4rem;
-        column-gap: 2rem;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
     }
 
     .habit-content {
@@ -1218,21 +1218,21 @@ section .common-service {
         padding: 15px 25px;
     }
 
-    /* Habit Section Responsive */
     .free-workout {
         top: 50px;
         right: -25px;
     }
-
+    
     .video-tutorial {
         bottom: 145px;
         left: -30px;
     }
-
+    
     .habit-title {
         font-size: 2rem;
     }
-
+    
+    /* Habit Section Responsive */
     .habit-text {
         font-size: 0.9rem;
         line-height: 1.3rem;
