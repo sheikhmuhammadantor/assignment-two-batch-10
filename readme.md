@@ -16,7 +16,7 @@
 
 ### 1. Small device upto : 375px
 ### 2. Medium device : 576px to 990px
-### 3. Large device above : 576px
+### 3. Large device above : 990px
 
 ---
 
